@@ -18,6 +18,7 @@ services:
       context: .
       dockerfile: Dockerfile
     restart: unless-stopped
+    stop_grace_period: 90s
     pids_limit: 2048
     expose:
       - "3100"
